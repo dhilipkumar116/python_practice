@@ -1,0 +1,23 @@
+import datetime as dt
+
+current_date = dt.date.today()
+print("current date:",current_date)
+
+new = dt.date(1999,9,24)
+print("date:",new)
+print("day:",new.day)
+print("month:",new.month)
+print("year:",new.year)
+print("------------------------------------")
+t = dt.time(10,33,4,231212)
+print("current time:",t)
+print("hour:",t.hour)
+print("minute:",t.minute)
+print("second:",t.second)
+print("millisecond:",t.microsecond)
+print("------------------------------------")
+cur_date_time = dt.datetime.now()
+print("current date time:",cur_date_time)
+print("------------------------------------")
+s = cur_date_time.strftime("%A %B %d %Y")
+print(s)
